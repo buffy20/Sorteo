@@ -7,6 +7,7 @@ package Sorteo;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,108 +36,69 @@ public class Sorteo extends javax.swing.JFrame {
         jTextFieldMaximo = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(251, 255, 253));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel5.setFont(new java.awt.Font("Verdana", 1, 80)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 153, 204));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Sorteo de Navidad ");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 25, 1094, 113));
 
         jTextFieldMaximo.setFont(new java.awt.Font("Verdana", 0, 50)); // NOI18N
+        jTextFieldMaximo.setForeground(new java.awt.Color(153, 204, 255));
+        jPanel1.add(jTextFieldMaximo, new org.netbeans.lib.awtextra.AbsoluteConstraints(582, 317, 364, 62));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 50)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 204));
         jLabel1.setText("Número máximo:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 317, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(0, 153, 204));
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 60)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(204, 204, 204));
+        jButton1.setText("Generar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 806, 1094, 120));
 
-        jLabel3.setBackground(new java.awt.Color(204, 204, 255));
-        jLabel3.setFont(new java.awt.Font("Verdana", 0, 250)); // NOI18N
-        jLabel3.setOpaque(true);
-
-        jLabel6.setFont(new java.awt.Font("Verdana", 3, 60)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Verdana", 2, 60)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 204, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("IES Ntra Sra de los Remedios");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 144, 1094, -1));
 
-        jLabel7.setBackground(new java.awt.Color(204, 204, 255));
-        jLabel7.setFont(new java.awt.Font("Verdana", 0, 250)); // NOI18N
-        jLabel7.setOpaque(true);
+        jLabel4.setFont(new java.awt.Font("Verdana", 0, 450)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 153, 204));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 350, 370));
 
-        jLabel8.setBackground(new java.awt.Color(204, 204, 255));
-        jLabel8.setFont(new java.awt.Font("Verdana", 0, 250)); // NOI18N
-        jLabel8.setOpaque(true);
+        jLabel9.setFont(new java.awt.Font("Verdana", 0, 450)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 153, 204));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 410, 350, 370));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1355, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(582, 582, 582)
-                        .addComponent(jTextFieldMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(257, 257, 257)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 577, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1341, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextFieldMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
-        );
+        jLabel10.setFont(new java.awt.Font("Verdana", 0, 450)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 153, 204));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 410, 350, 370));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/christmas-wallpaper-hd.jpg"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 1010));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 64, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,48 +109,58 @@ public class Sorteo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Random generaNumero = new Random();
-        int numeroMaximo = Integer.valueOf(jTextFieldMaximo.getText());
-        int numeroElegido = generaNumero.nextInt(numeroMaximo) + 1;
-        String numero = String.valueOf(numeroElegido);
-        String primerNumero = numero.substring(0, 1);
-        String segundoNumero = numero.substring(1, 2);
-        String tercerNumero = numero.substring(2, 3);
-        int vueltas = 15;
-        for (int i = 0; i <= vueltas; i++) {
-            try {
-                int mostrarNumeros = generaNumero.nextInt(10);
-                jLabel3.setText("" + mostrarNumeros);
-                jLabel3.paintImmediately(0, 0, jLabel3.getWidth(), jLabel3.getHeight());
-                jLabel3.setText("" + primerNumero);
-                Thread.sleep(300);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Sorteo.class.getName()).log(Level.SEVERE, null, ex);
+
+        try {
+            Random generaNumero = new Random();
+            int numeroMaximo = Integer.valueOf(jTextFieldMaximo.getText());
+            int numeroElegido = generaNumero.nextInt(numeroMaximo) + 1;
+            String numero = String.valueOf(numeroElegido);
+            String primerNumero = numero.substring(0, 1);
+            String segundoNumero = numero.substring(1, 2);
+            String tercerNumero = numero.substring(2, 3);
+            int vueltas = 15;
+            if (numeroMaximo >= 1 && numeroMaximo <= 999) {
+                for (int i = 0; i <= vueltas; i++) {
+                    try {
+                        int mostrarNumeros = generaNumero.nextInt(10);
+                        jLabel4.setText("" + mostrarNumeros);
+                        jLabel4.paintImmediately(0, 0, jLabel4.getWidth(), jLabel4.getHeight());
+                        jLabel4.setText("" + primerNumero);
+                        Thread.sleep(300);
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(Sorteo.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                for (int i = 0; i <= vueltas; i++) {
+                    try {
+                        int mostrarNumeros = generaNumero.nextInt(10);
+                        jLabel10.setText("" + mostrarNumeros);
+                        jLabel10.paintImmediately(0, 0, jLabel10.getWidth(), jLabel10.getHeight());
+                        jLabel10.setText("" + segundoNumero);
+                        Thread.sleep(300);
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(Sorteo.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                for (int i = 0; i <= vueltas; i++) {
+                    try {
+                        int mostrarNumeros = generaNumero.nextInt(10);
+                        jLabel9.setText("" + mostrarNumeros);
+                        jLabel9.paintImmediately(0, 0, jLabel9.getWidth(), jLabel9.getHeight());
+                        jLabel9.setText("" + tercerNumero);
+                        Thread.sleep(300);
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(Sorteo.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+            }else{
+               JOptionPane.showMessageDialog(this, "Debe introducir un número hasta el 999", "Error", JOptionPane.WARNING_MESSAGE); 
             }
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Debe introducir un número entero", "Error", JOptionPane.WARNING_MESSAGE);
         }
-        for (int i = 0; i <= vueltas; i++) {
-            try {
-                int mostrarNumeros = generaNumero.nextInt(10);
-                jLabel7.setText("" + mostrarNumeros);
-                jLabel7.paintImmediately(0, 0, jLabel7.getWidth(), jLabel7.getHeight());
-                jLabel7.setText("" + segundoNumero);
-                Thread.sleep(300);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Sorteo.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        for (int i = 0; i <= vueltas; i++) {
-            try {
-                int mostrarNumeros = generaNumero.nextInt(10);
-                jLabel8.setText("" + mostrarNumeros);
-                jLabel8.paintImmediately(0, 0, jLabel8.getWidth(), jLabel8.getHeight());
-                jLabel8.setText("" + tercerNumero);
-                Thread.sleep(300);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Sorteo.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        
+
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -199,7 +171,7 @@ public class Sorteo extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -229,11 +201,12 @@ public class Sorteo extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextFieldMaximo;
     // End of variables declaration//GEN-END:variables
